@@ -64,7 +64,7 @@ function AppcontextProvider({children}) {
 
     return (
     <appcontext.Provider 
-    value={{Total,cartItem,notify,IncCartItem,DecCartItem,RemovefromCart}}>
+    value={{Total,cartItem,notify,IncCartItem,DecCartItem,RemovefromCart,setCartItem}}>
         {children}
     </appcontext.Provider> );
 }

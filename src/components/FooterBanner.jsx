@@ -12,7 +12,7 @@ function FooterBan() {
             </div>
             <div >
                 <img className=" xl:absolute top-[-65px] left-1/3 xl:translate-x-[-30%] w-[350px] h-[350px]  "
-                 src="../../src/assets/580b57fbd9996e24bc43bfbc.png" alt="" />
+                 src="/580b57fbd9996e24bc43bfbc.png" alt="img" />
                 </div>
             <div className=" mt-3 xl:mt-0">
             <p className=" text-sm capitalize ">best solo air</p>

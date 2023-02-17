@@ -4,7 +4,7 @@ import Quantity from "../components/Quantity";
 import { useAppContext } from "../context/appcontext";
 
 function Card() {
-  const {cartItem,RemovefromCart,Total} = useAppContext()
+  const {cartItem,RemovefromCart,Total,setCartItem} = useAppContext()
 
   return (
     <section
@@ -58,7 +58,7 @@ function Card() {
             <p className=" font-medium text-xl">$ {Total.Tprice}</p>
           </div>
           <Link to={'/order'}>
-          <button className=" w-1/2 rounded-sm font-medium mt-4 mb-3 bg-red-500 text-white capitalize py-2 px-5">
+          <button onClick={()=>setCartItem([])} className=" w-1/2 rounded-sm font-medium mt-4 mb-3 bg-red-500 text-white capitalize py-2 px-5">
             place order
           </button>
           </Link>
