@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{box-sizing: border-box;}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+
+}
+.main img{
+    border-radius:30px ;
+    max-width: 350px;
+    transition: .2s ease-in-out;
+    
+}
+.main img:hover{
+    transform: scale(1.1);
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.card-grid img{grid-row: 1/3;}
+.card-grid h1{grid-column: 2/4;}
+.card-grid .quantity{grid-row: 2/3;}
+.card-grid .quantity{grid-column: 2/3;}
+.card-grid button{grid-column: 4/5;}
+.card-grid p{justify-self:center;}
+.card-grid button{justify-self:center;align-self: self-start;}
+
+.Notify{ animation: slide 2s ease-in-out;}
+
+@keyframes slide {
+    0%{top: -40px;}
+    10%{top: 12px;}
+    90%{top: 12px;}
+    100%{top: -40px;}
+    
+}
