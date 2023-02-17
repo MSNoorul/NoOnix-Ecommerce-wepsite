@@ -17,7 +17,7 @@ function FooterBan() {
             <div className=" mt-3 xl:mt-0 ">
             <p className=" text-sm capitalize ">best solo air</p>
                 <p className=" pl-1 text-4xl font-extrabold mt-6 capitalize">summer sale</p>
-                <p className="  mb-3 font-light h-7">company thats grown from 230 to 470 employees in last 12 mounths</p>
+                <p className="  mb-3 font-light ">company thats grown from 230 to 470 employees in last 12 mounths</p>
                 <button className=" bg-slate-100 rounded-[25px] px-3 py-2 font-semibold text-red-600"> shop now</button>
 
             </div>
