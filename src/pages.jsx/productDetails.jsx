@@ -1,6 +1,6 @@
 
 import {  useLayoutEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import dp from "../assets/body.json";
 import Navbar from "../components/Navbar";
 import Notify from "../components/Notify";
@@ -82,7 +82,10 @@ function Details() {
 
           <div className=" mt-8">
             <button onClick={() => IncCartItem(id,data)} className=" capitalize mr-3 border-red-400 border-[1px] border-solid py-1 px-6 w-40 font-semibold text-red-600">add to card</button>
+            <Link to={'/card'} >
             <button className=" capitalize ml-3 bg-red-500 border-[1px] border-solid border-red-500  py-1 px-6 w-40 font-semibold text-white">buy  now</button>
+            </Link>
+            
           </div>
           
         </div>
