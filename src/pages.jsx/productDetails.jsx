@@ -18,7 +18,7 @@ function Details() {
     const amount = findCart?.amount ||0;
 
     useLayoutEffect(()=>{
-      
+        window.scrollTo(0,0)
         const mydata = dp.filter((obj)=>id == obj.id)
         setdata(mydata[0])
   
